@@ -68,6 +68,7 @@ var busStop = L.geoJson(busStop_geoJson,{
     pointToLayer: L.mapbox.marker.style,
 }); // returns a bunch of markers
 busStopCluster.addLayer(busStop);
+marker.bindPopup("<b>busStop</b>")
 
 var atm = L.geoJson(atm_geoJson,{
     pointToLayer: L.mapbox.marker.style,
